@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>The idle-license audit: finding the licenses nobody logs into · LicenseIQ</title>
+  <meta name="description" content="How to define "unused" so the business agrees, which accounts to exclude, and what evidence you need before you remove a license.">
+  <meta name="theme-color" content="#07111d">
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@1&display=swap">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="../index.html"><img src="../assets/img/logo.svg" alt="" width="32" height="32">LicenseIQ</a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="../index.html#what">Why</a></li>
+        <li><a href="../index.html#how">How it works</a></li>
+        <li><a href="../index.html#platform">Platform</a></li>
+        <li><a href="../index.html#estimate">Savings estimate</a></li>
+        <li><a href="../index.html#customers">Customers</a></li>
+        <li><a href="index.html" aria-current="page">Blog</a></li>
+        <li class="mobile-only"><a href="mailto:alireza-farhidzadeh@hcltech.com?subject=LicenseIQ%20demo%20request">Request a demo</a></li>
+      </ul>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn--gold btn--sm" href="mailto:alireza-farhidzadeh@hcltech.com?subject=LicenseIQ%20demo%20request">Request a demo</a>
+      <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false">
+        <svg class="open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <svg class="close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+<main id="main">
+
+  <article>
+    <header class="article-hero">
+      <div class="container">
+        <span class="eyebrow">Playbook</span>
+        <h1>The idle-license audit: finding the licenses nobody logs into</h1>
+        <p class="lead">The largest lever in most SAP estates is also the most awkward to pull: licenses held by people who never sign in. Here is how to define them so the business agrees, which accounts to set aside, and what evidence you need before you remove anything.</p>
+        <div class="article-meta"><span>Sep 9, 2026</span><span>7 min read</span><span>By the LicenseIQ team</span></div>
+      </div>
+    </header>
+    <div class="article band--paper">
+      <div class="container">
+        <div class="prose">
+
+<h2>What "idle" has to mean</h2>
+<p>An idle license is an account for which three things are all true:</p>
+<ol>
+  <li>The account is <b>active</b>: not locked, with a valid-to date in the future.</li>
+  <li>It holds at least one role that <b>classifies to a license tier</b>.</li>
+  <li>There is <b>no recorded usage</b> in the window you have chosen.</li>
+</ol>
+<p>Each condition closes a trap. Locked accounts cost nothing, so counting them inflates the number and loses the room's trust. Accounts without classified roles cost nothing either. And "no usage" without a window is not a definition; it is an argument waiting to happen.</p>
+
+<h2>Choosing the window</h2>
+<p>A one-month window catches people who left last week. It also catches everyone on holiday, on secondment, or whose quarter-end job runs four times a year. A twelve-month window has no false positives and costs you a year of paying for every genuinely idle license.</p>
+<p>Most teams land on three months as the working definition and keep a six-month cohort alongside it for the budget case. The important thing is that the window is a <b>parameter</b>, agreed with the business and changeable in a minute, not a rule buried in a spreadsheet. In LicenseIQ it is a slider from 1 to 12 months, and the cohort and its savings recalculate as you move it.</p>
+
+<h2>The accounts to set aside first</h2>
+<ul>
+  <li><b>Service, system and interface accounts.</b> They are not people, they often show no dialog usage, and they may be load-bearing. Filter on user type before anything else.</li>
+  <li><b>New joiners</b> inside their first weeks, who have a license and have not started.</li>
+  <li><b>Known leaves of absence</b>, which HR can confirm from the identity platform's export.</li>
+  <li><b>Users whose activity lives in a system you have not exported.</b> If usage coverage is partial, say so on the page, and widen it before you act.</li>
+  <li><b>Display-only users.</b> They are not idle. They are Self-Service candidates, which is a different lever with a different conversation.</li>
+</ul>
+
+<h2>Evidence, per account</h2>
+<blockquote>If you cannot produce the row, you cannot defend the removal.</blockquote>
+<p>For every account on the list you need: the user ID, user type, validity dates, last logon, the roles held and their classification, the usage count in the window, and the FUE and dollars at stake. That row is what turns a list of names into a decision the business can sign. It is also what you hand to an auditor, or to the vendor, when the number is challenged.</p>
+
+<h2>What the number tends to look like</h2>
+<div class="callout"><b>Reference assessment.</b> 5,631 licensed, active accounts had no recorded usage in the window. At $540 per FUE that was $1.2 million a year, and 88% of everything the assessment identified. Over-tiered users, the lever people usually expect to dominate, were the other 12%.</div>
+<p>The ratio is typical. Idle licenses are large because nobody is paid to notice them: the people who could see the problem each see one slice of it, and the bill arrives as one number.</p>
+
+<h2>From list to saving</h2>
+<p>Remove or downgrade through your normal change process, in batches, starting with the accounts whose owners have confirmed they have left. Then run the assessment again. The cohort shrinks, and the difference between the two runs is your realised saving, in the vendor's own unit. Put the re-run on a quarterly cadence and the number stops growing back.</p>
+
+        </div>
+
+<div class="article-cta">
+  <div><h3>See these numbers for your own estate</h3><p>A thirty-minute walkthrough of a reference assessment, and the list of exports to pull.</p></div>
+  <a class="btn btn--gold" href="mailto:alireza-farhidzadeh@hcltech.com?subject=LicenseIQ%20demo%20request">Request a demo</a>
+</div>
+      </div>
+    </div>
+  </article>
+  <section class="band band--paper related">
+    <div class="container">
+      <div class="section-head"><span class="eyebrow">Keep reading</span><h2>More from the blog</h2></div>
+      <div class="posts">
+        <a class="post-card" href="fue-explained.html" data-reveal style="--i:0">
+          <div class="post-art"><img src="../assets/img/art-fue.svg" alt="" width="200" height="120"></div>
+          <div class="post-body">
+            <div class="post-meta"><span class="cat">Fundamentals</span><span>Aug 18, 2026</span><span>6 min read</span></div>
+            <h3>FUE, explained: Advanced, Core and Self-Service in plain English</h3>
+            <p>One Full Use Equivalent is one Advanced user, five Core users or thirty Self-Service users. Why that ratio makes a single role so expensive.</p>
+            <span class="more">Read the article →</span>
+          </div>
+        </a>
+        <a class="post-card" href="scenario-modeling-before-renewal.html" data-reveal style="--i:1">
+          <div class="post-art"><img src="../assets/img/art-scenario.svg" alt="" width="200" height="120"></div>
+          <div class="post-body">
+            <div class="post-meta"><span class="cat">Renewals</span><span>Oct 1, 2026</span><span>6 min read</span></div>
+            <h3>What-if before you sign: scenario modeling for your SAP renewal</h3>
+            <p>Test a role redesign on paper, price it in FUE, and walk into the negotiation with the number you are prepared to commit to.</p>
+            <span class="more">Read the article →</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="../index.html"><img src="../assets/img/logo.svg" alt="" width="32" height="32">LicenseIQ</a>
+        <p>SAP license optimization that turns the usage, role and license data you already have into defensible annual savings.</p>
+      </div>
+      <div>
+        <h4>Product</h4>
+        <ul>
+          <li><a href="../index.html#how">How it works</a></li>
+          <li><a href="../index.html#platform">Platform</a></li>
+          <li><a href="../index.html#estimate">Savings estimate</a></li>
+          <li><a href="../index.html#security">Security</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="index.html">Blog</a></li>
+          <li><a href="fue-explained.html">FUE explained</a></li>
+          <li><a href="idle-license-audit.html">Idle-license audit</a></li>
+          <li><a href="scenario-modeling-before-renewal.html">Scenario modeling</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:alireza-farhidzadeh@hcltech.com?subject=LicenseIQ%20demo%20request">Request a demo</a></li>
+          <li><a href="mailto:alireza-farhidzadeh@hcltech.com">alireza-farhidzadeh@hcltech.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> LicenseIQ. All rights reserved.</span>
+      <span>Reference figures come from an anonymized assessment. Testimonials are illustrative.</span>
+    </div>
+  </div>
+</footer>
+<script src="../assets/js/site.js" defer></script>
+</body>
+</html>

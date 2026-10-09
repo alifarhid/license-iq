@@ -1,0 +1,606 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>LicenseIQ · Cut SAP license spend you can prove you don't need</title>
+  <meta name="description" content="LicenseIQ compares real SAP usage against every user's license tier, finds idle and over-tiered licenses, and hands your team an evidence-backed plan to cut the bill before renewal. File-based, runs on your network.">
+  <meta name="theme-color" content="#07111d">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <meta property="og:title" content="LicenseIQ · SAP license optimization">
+  <meta property="og:description" content="Stop paying for SAP licenses your people don't use. Evidence-backed savings, in minutes, on your own files.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@1&display=swap">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <script type="importmap">
+    { "imports": {
+      "three": "./assets/vendor/three/three.module.min.js",
+      "three/addons/": "./assets/vendor/three/addons/"
+    } }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "LicenseIQ",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Any",
+    "description": "SAP license optimization: compares real usage against license entitlements to find defensible savings.",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD", "description": "Demo on request" }
+  }
+  </script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html"><img src="assets/img/logo.svg" alt="" width="32" height="32">LicenseIQ</a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="#what">Why</a></li>
+        <li><a href="#how">How it works</a></li>
+        <li><a href="#platform">Platform</a></li>
+        <li><a href="#estimate">Savings estimate</a></li>
+        <li><a href="#customers">Customers</a></li>
+        <li><a href="blog/index.html">Blog</a></li>
+        <li class="mobile-only"><a href="mailto:alireza-farhidzadeh@hcltech.com?subject=LicenseIQ%20demo%20request">Request a demo</a></li>
+      </ul>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn--gold btn--sm" href="mailto:alireza-farhidzadeh@hcltech.com?subject=LicenseIQ%20demo%20request&amp;body=Hello%2C%0A%0AI%27d%20like%20to%20see%20a%20LicenseIQ%20demo.%0A%0ACompany%3A%0ASAP%20users%20(approx.)%3A%0APreferred%20times%3A%0A">Request a demo</a>
+      <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="primary-nav">
+        <svg class="open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <svg class="close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ===================== Hero ===================== -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="container">
+      <div>
+        <span class="eyebrow">SAP license optimization</span>
+        <h1 id="hero-title">Stop paying for SAP licenses your people don't <span class="serif">use</span>.</h1>
+        <p class="lead">LicenseIQ reads the usage, role and license data you already export, finds every idle and over-tiered license, and gives your team an evidence-backed plan to cut the bill before the next renewal.</p>
+        <div class="btn-row">
+          <a class="btn btn--gold" href="mailto:alireza-farhidzadeh@hcltech.com?subject=LicenseIQ%20demo%20request&amp;body=Hello%2C%0A%0AI%27d%20like%20to%20see%20a%20LicenseIQ%20demo.%0A%0ACompany%3A%0ASAP%20users%20(approx.)%3A%0APreferred%20times%3A%0A">Request a demo
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+          <a class="btn btn--ghost" href="#how">See how it works</a>
+        </div>
+        <div class="hero-proof" aria-label="Key facts">
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>File-based, no agents</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Runs on your own network</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Results in minutes</span>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="sculpture-glow"></div>
+        <div class="sculpture" data-sculpture="armillary" role="img" aria-label="A gold armillary sphere whose rings carry users, roles and licenses as glowing nodes"></div>
+      </div>
+
+      <div class="stats" aria-label="Reference assessment results">
+        <div class="stat">
+          <span class="value gold-text num" data-count="1378800" data-format="money-compact">$0</span>
+          <span class="label">identified annual savings</span>
+        </div>
+        <div class="stat">
+          <span class="value num" data-count="8.4" data-format="percent">0%</span>
+          <span class="label">of active users hold a higher tier than their work needs</span>
+        </div>
+        <div class="stat">
+          <span class="value num" data-count="5600" data-format="plus">0</span>
+          <span class="label">licensed, active accounts with no recorded usage</span>
+        </div>
+      </div>
+      <p class="stats-note">Reference assessment on anonymized data · 7,149 active users analyzed · priced at $540 per FUE.</p>
+    </div>
+  </section>
+
+  <!-- ===================== What SAP license optimization is ===================== -->
+  <section class="band band--white define" id="what" aria-labelledby="define-title">
+    <div class="container">
+      <div class="define-grid">
+        <div class="define-copy" data-reveal>
+          <span class="eyebrow">The discipline</span>
+          <h2 id="define-title">SAP license optimization is the continuous work of auditing, right-sizing and managing your SAP entitlements and user classifications, so you stop paying for waste and stop being surprised at audit time.</h2>
+          <p class="lead">Most estates have never done it end to end. Licenses were assigned by role years ago, the roles grew, the people moved on, and the invoice kept its old shape. LicenseIQ turns the discipline into an assessment you can repeat before every renewal.</p>
+        </div>
+        <aside class="define-stat" data-reveal style="--i:1" aria-label="Typical SAP license overspend">
+          <svg class="gauge" viewBox="0 0 240 128" aria-hidden="true">
+            <path d="M20 120 A100 100 0 0 1 220 120" fill="none" stroke="rgba(255,255,255,.12)" stroke-width="14" stroke-linecap="round"/>
+            <path d="M39.1 61.2 A100 100 0 0 1 89.1 24.9" fill="none" stroke="url(#gaugeGold)" stroke-width="14" stroke-linecap="round"/>
+            <defs><linearGradient id="gaugeGold" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#c9972b"/><stop offset="1" stop-color="#f3dfae"/></linearGradient></defs>
+          </svg>
+          <span class="big gold-text num">20–40%</span>
+          <p>of SAP license spend is typically waste: inactive accounts, mismatched user types and shelfware nobody uses.</p>
+          <small>Industry estimates across published SAP licensing reviews</small>
+        </aside>
+      </div>
+
+      <ol class="strategies" aria-label="The four strategies of SAP license optimization">
+        <li class="strategy" data-reveal style="--i:0">
+          <span class="no">01</span>
+          <h3>Audit user activity</h3>
+          <p>Find inactive, duplicate and terminated accounts that still hold an active license, and release them.</p>
+          <span class="in"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg><span>In LicenseIQ: inactivity cohorts with a 1 to 12 month threshold, every account with its last logon and usage count.</span></span>
+        </li>
+        <li class="strategy" data-reveal style="--i:1">
+          <span class="no">02</span>
+          <h3>Right-size license types</h3>
+          <p>Move users holding costly Professional or Advanced Use licenses to Core or Self-Service, based on the transactions and authorizations they actually use.</p>
+          <span class="in"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg><span>In LicenseIQ: the tier each user holds against the tier their usage supports, priced in FUE.</span></span>
+        </li>
+        <li class="strategy" data-reveal style="--i:2">
+          <span class="no">03</span>
+          <h3>Clean up roles and authorizations</h3>
+          <p>Under S/4HANA's authorization-based FUE metric, excess permissions and unused roles inflate the license count. Remove the roles that drag a job profile into a higher tier.</p>
+          <span class="in"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg><span>In LicenseIQ: the relationship explorer shows which roles set the tier, and role consolidation finds duplicate profiles.</span></span>
+        </li>
+        <li class="strategy" data-reveal style="--i:3">
+          <span class="no">04</span>
+          <h3>Eliminate shelfware</h3>
+          <p>Compare what is deployed with what is used, stop paying maintenance on modules nobody touches, and negotiate license swaps at renewal.</p>
+          <span class="in"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg><span>In LicenseIQ: scenario simulation and instant repricing give you the user-level FUE position to negotiate from. Module inventories come from your SAM tooling.</span></span>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ===================== Levers ===================== -->
+  <section class="band band--paper" id="levers" aria-labelledby="levers-title">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow">Where the money is</span>
+        <h2 id="levers-title">Three places every SAP estate overpays</h2>
+        <p>Licenses are granted by role, but billed by tier. Over the years the two drift apart, and nobody is paid to notice. LicenseIQ measures the gap in three places and prices each one.</p>
+      </div>
+      <div class="grid grid-3">
+        <article class="card lever" data-reveal style="--i:0">
+          <span class="tag tag--gold">Idle licenses</span>
+          <h3>Licensed, active, never used</h3>
+          <div class="figure"><span class="gold-text num" data-count="1212318" data-format="money-compact">$0</span><small>a year</small></div>
+          <p>Accounts that hold a classified role, are not locked, and have no recorded transactions in the window you choose. The largest lever in almost every estate.</p>
+          <p class="evidence"><b class="num">5,631</b> such accounts in the reference assessment, each traced to its roles, last logon and usage count.</p>
+        </article>
+        <article class="card lever" data-reveal style="--i:1">
+          <span class="tag tag--blue">Over-tiered users</span>
+          <h3>Advanced licenses doing Core work</h3>
+          <div class="figure"><span class="num" data-count="166482" data-format="money-compact">$0</span><small>a year</small></div>
+          <p>One Advanced-classified role in a bundle drags the whole user to the top tier. Usage shows what they actually do, and which roles to remove to drop a tier.</p>
+          <p class="evidence"><b class="num">598 of 7,149</b> active users (8.4%) could move down a tier, freeing <b class="num">308 FUE</b>.</p>
+        </article>
+        <article class="card lever" data-reveal style="--i:2">
+          <span class="tag tag--green">Role sprawl</span>
+          <h3>Job profiles that are copies of each other</h3>
+          <div class="figure"><span class="num" data-count="96" data-format="int">0</span><small>% identical</small></div>
+          <p>Near-duplicate job profiles multiply the roles you have to classify, review and defend. Consolidating them keeps future licensing honest.</p>
+          <p class="evidence"><b class="num">109,679</b> of 114,228 candidate profile pairs share exactly the same entitlements.</p>
+        </article>
+      </div>
+      <div class="industries" data-reveal aria-label="Industries">
+        <span>Manufacturing</span><span>Chemicals &amp; mining</span><span>Food &amp; beverage</span><span>Pharma</span><span>Utilities</span><span>Retail &amp; distribution</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Network ===================== -->
+  <section class="band band--dark network" id="problem" aria-labelledby="network-title">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow">The problem</span>
+        <h2 id="network-title">Licensing is decided by a knot you can't see.</h2>
+        <p>Users inherit job profiles. Profiles carry roles. Roles carry authorizations, and the most demanding authorization sets the license tier. Multiply by thousands of users and the bill is set by relationships nobody has mapped. LicenseIQ maps them, then sorts every user into the tier the evidence supports.</p>
+      </div>
+      <div class="network-stage" data-reveal>
+        <canvas id="network" role="img" aria-label="A tangle of users, roles and licenses that sorts itself into Advanced, Core and Self-Service tiers, with unused licenses set aside"></canvas>
+        <div class="network-legend" aria-hidden="true">
+          <span><i style="background:#e3b95e"></i>Advanced</span>
+          <span><i style="background:#4fb6e8"></i>Core</span>
+          <span><i style="background:#35c48f"></i>Self-Service</span>
+          <span><i style="background:#6b7a8c"></i>No recorded usage</span>
+        </div>
+        <div id="network-tip" class="network-tip" aria-hidden="true"></div>
+        <div class="network-controls">
+          <button id="untangle" class="btn btn--ghost btn--sm" type="button" aria-pressed="false">Untangle it</button>
+        </div>
+      </div>
+      <div class="network-foot">
+        <span>Hover a node to see its relationships. Nodes are illustrative.</span>
+        <span>In the product, the same map is interactive for your real estate: the Relationship explorer.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== How it works ===================== -->
+  <section class="band band--paper" id="how" aria-labelledby="how-title">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow">How it works</span>
+        <h2 id="how-title">From exports to an approved action plan in an afternoon.</h2>
+        <p>No connectors, no credentials, nothing installed in SAP. The assessment runs on the files your basis and identity teams already produce.</p>
+      </div>
+      <div class="grid grid-3 steps">
+        <article class="card step" data-reveal style="--i:0">
+          <span class="step-no">1</span>
+          <h3>Point it at your exports</h3>
+          <p>User list, role assignments, role-to-license classification, usage statistics and your identity platform's job-profile export. Drop them in a folder.</p>
+          <div class="mock" aria-hidden="true">
+            <div class="file">PA1 ALL Users List.xlsx <i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>ready</i></div>
+            <div class="file">AGR_USERS role assignments.xlsx <i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>ready</i></div>
+            <div class="file">Role License Category.xlsx <i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>ready</i></div>
+            <div class="file">Usage data GRACTUSAGE.xlsx <i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>ready</i></div>
+          </div>
+        </article>
+        <article class="card step" data-reveal style="--i:1">
+          <span class="step-no">2</span>
+          <h3>Run the assessment</h3>
+          <p>The engine reconciles usage, roles, licenses and FUE cost, and streams its progress. A 10,000-user estate finishes in minutes on a laptop.</p>
+          <div class="mock" aria-hidden="true">
+            <div class="progress"><i></i></div>
+            <div class="log">
+              <span><b>✓</b> 7 of 7 input files validated</span>
+              <span><b>✓</b> 992,423 role assignments reconciled</span>
+              <span><b>✓</b> 252,720 usage records mapped to tiers</span>
+              <span>… pricing recommendations at $540 per FUE</span>
+            </div>
+          </div>
+        </article>
+        <article class="card step" data-reveal style="--i:2">
+          <span class="step-no">3</span>
+          <h3>Act with evidence</h3>
+          <p>A prioritized action plan, every line with the user, roles, usage and saving behind it. Export it and route it through your own change process.</p>
+          <div class="mock" aria-hidden="true">
+            <table>
+              <thead><tr><th>Priority</th><th>Recommendation</th><th>Saving</th></tr></thead>
+              <tbody>
+                <tr><td><span class="badge badge--high">▲ High</span></td><td><span class="who">User_1506</span><span class="what">Remove idle license</span></td><td>$540</td></tr>
+                <tr><td><span class="badge badge--high">▲ High</span></td><td><span class="who">User_26814</span><span class="what">Remove idle license</span></td><td>$540</td></tr>
+                <tr><td><span class="badge badge--med">● Medium</span></td><td><span class="who">User_0912</span><span class="what">Advanced → Core</span></td><td>$432</td></tr>
+                <tr><td><span class="badge badge--std">■ Standard</span></td><td><span class="who">User_4471</span><span class="what">Core → Self-Service</span></td><td>$90</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Platform ===================== -->
+  <section class="band band--white" id="platform" aria-labelledby="platform-title">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow">The platform</span>
+        <h2 id="platform-title">Built for the team that has to defend every number.</h2>
+        <p>Reports tell you there is a problem. LicenseIQ gives the people who own the renewal the tools to act on it, and the evidence to hold their ground when procurement, audit or the vendor pushes back.</p>
+      </div>
+      <div class="grid grid-3">
+        <article class="card feature" data-reveal style="--i:0">
+          <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M2 20h20"/></svg></div>
+          <h3>Executive dashboard</h3>
+          <p>One savings figure your CFO can repeat, with the two levers behind it. Change the FUE price and every chart, KPI and plan reprices instantly, without a rerun.</p>
+        </article>
+        <article class="card feature" data-reveal style="--i:1">
+          <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+          <h3>Prioritized action plan</h3>
+          <p>Thousands of recommendations ranked High, Medium and Standard. Each row carries the user, the roles, the usage evidence and the saving. Filter, review and export to CSV.</p>
+        </article>
+        <article class="card feature" data-reveal style="--i:2">
+          <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg></div>
+          <h3>Scenario simulation</h3>
+          <p>Propose role changes to a job profile and see the FUE and annual cost impact before anything touches production. Compare current and proposed side by side.</p>
+        </article>
+        <article class="card feature" data-reveal style="--i:3">
+          <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="6" r="2.5"/><circle cx="19" cy="6" r="2.5"/><circle cx="12" cy="18" r="2.5"/><path d="M7 7.5l3.5 8M17 7.5l-3.5 8M7.5 6h9"/></svg></div>
+          <h3>Relationship explorer</h3>
+          <p>An interactive map of job profiles, roles, licenses and systems. Select several profiles at once, go full screen, and see which shared roles set the tier.</p>
+        </article>
+        <article class="card feature" data-reveal style="--i:4">
+          <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+          <h3>Inactivity cohorts</h3>
+          <p>Set the threshold anywhere from 1 to 12 months. The inactivity cohort and its savings recalculate so you can agree a defensible definition of "unused" with the business.</p>
+        </article>
+        <article class="card feature" data-reveal style="--i:5">
+          <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 4.6L18 9l-4.2 1.4L12 15l-1.8-4.6L6 9l4.2-1.4z"/><path d="M5 17l.9 2.1L8 20l-2.1.9L5 23l-.9-2.1L2 20l2.1-.9z"/><path d="M19 15l.7 1.6 1.6.7-1.6.7L19 19.6l-.7-1.6-1.6-.7 1.6-.7z"/></svg></div>
+          <h3>Assistant that stays on topic</h3>
+          <p>Ask in plain English: "Which license category is assigned to Role_14425?" Answers come only from your assessment and input files, never from the open internet, and it declines anything else.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Estimator ===================== -->
+  <section class="band band--navy" id="estimate" aria-labelledby="estimate-title">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow">Savings estimate</span>
+        <h2 id="estimate-title">What is hiding in your estate?</h2>
+        <p>Move the sliders to your numbers. The model is deliberately simple and every assumption is shown; an assessment replaces the assumptions with your actual usage data.</p>
+      </div>
+      <div class="calc" id="calc">
+        <div class="calc-panel" data-reveal>
+          <div class="field">
+            <label for="calc-users">Licensed SAP users <output id="out-users">12,000</output></label>
+            <input id="calc-users" type="range" min="500" max="50000" step="100" value="12000">
+          </div>
+          <div class="field">
+            <label for="calc-price">Annual price per FUE (USD)</label>
+            <input id="calc-price" type="number" min="1" step="10" value="540" inputmode="numeric">
+            <span class="hint">Your contract price for one Full Use Equivalent. The reference assessment uses $540.</span>
+          </div>
+          <div class="field">
+            <label for="calc-idle">Licensed accounts with no recorded usage <output id="out-idle">6%</output></label>
+            <input id="calc-idle" type="range" min="0" max="30" step="1" value="6">
+          </div>
+          <div class="field">
+            <label for="calc-over">Active users holding a higher tier than they use <output id="out-over">8%</output></label>
+            <input id="calc-over" type="range" min="0" max="30" step="1" value="8">
+            <span class="hint">8.4% in the reference assessment.</span>
+          </div>
+          <details>
+            <summary>How this is calculated</summary>
+            <p>Idle savings = users × idle share × 0.6 FUE × price. Over-tier savings = remaining users × over-tier share × 0.8 FUE × price, because moving a user from Advanced (1 FUE) to Core (0.2 FUE) frees 0.8 FUE. Idle accounts are assumed to average 0.6 FUE across tiers. Indicative only; recommendations always need business validation.</p>
+          </details>
+        </div>
+        <div class="calc-visual" data-reveal>
+          <div class="calc-result">
+            <span class="label">Estimated annual savings</span>
+            <span class="big gold-text num" id="out-total">$0</span>
+            <div class="calc-bars">
+              <div class="calc-bar"><span>Idle licenses</span><span class="track"><i class="fill fill--gold" id="bar-idle"></i></span><span class="val num" id="out-idle-money">$0</span></div>
+              <div class="calc-bar"><span>Over-tiered users</span><span class="track"><i class="fill fill--blue" id="bar-over"></i></span><span class="val num" id="out-over-money">$0</span></div>
+            </div>
+            <p class="muted" style="font-size:.875rem">That is <b id="out-fue" class="num" style="color:#fff">0 FUE</b> you stop paying for, or <b id="out-3y" class="num" style="color:#fff">$0</b> over a three-year term.</p>
+          </div>
+          <div class="sculpture" data-sculpture="ledger" role="img" aria-label="A stack of gold discs, the top three lifted away as glass" style="margin-top:-24px"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Security ===================== -->
+  <section class="band band--dark" id="security" aria-labelledby="security-title">
+    <div class="container security">
+      <div data-reveal>
+        <div class="sculpture-glow"></div>
+        <div class="sculpture" data-sculpture="key" role="img" aria-label="A gold key"></div>
+      </div>
+      <div>
+        <div class="section-head" data-reveal>
+          <span class="eyebrow">Security</span>
+          <h2 id="security-title">Your data never leaves your building.</h2>
+          <p>Licensing data is HR data. LicenseIQ is designed so your security team can approve it in a week, not a quarter.</p>
+        </div>
+        <div class="security-list">
+          <div class="security-item" data-reveal style="--i:0">
+            <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></div>
+            <div><h4>File-based, read-only</h4><p>Works from standard exports. No connector, no service account, no agent in SAP, and nothing is written back.</p></div>
+          </div>
+          <div class="security-item" data-reveal style="--i:1">
+            <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></div>
+            <div><h4>Runs where the data lives</h4><p>On a laptop, a server or an air-gapped VM. The optional assistant is the only feature that calls out, and it is off until you give it a key.</p></div>
+          </div>
+          <div class="security-item" data-reveal style="--i:2">
+            <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3l18 18"/><path d="M10.6 10.6a2 2 0 0 0 2.8 2.8"/><path d="M9.9 4.2A10.6 10.6 0 0 1 21 12a10 10 0 0 1-2.2 3.2"/><path d="M6.6 6.6A10.6 10.6 0 0 0 3 12a10.5 10.5 0 0 0 11.5 7"/></svg></div>
+            <div><h4>Built-in anonymization</h4><p>Pseudonymize user and role identifiers before an assessment is shared with consultants or auditors. The analysis is unchanged; the names are not there.</p></div>
+          </div>
+          <div class="security-item" data-reveal style="--i:3">
+            <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/><path d="M12 8v4l3 2"/></svg></div>
+            <div><h4>An audit trail for every number</h4><p>Each run records its inputs, thresholds, price and timestamp, and every recommendation traces to the source rows that produced it.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Testimonials ===================== -->
+  <section class="band band--paper" id="customers" aria-labelledby="customers-title">
+    <div class="container">
+      <div class="section-head center" data-reveal>
+        <span class="eyebrow">Customers</span>
+        <h2 id="customers-title">For teams who have to defend every number.</h2>
+      </div>
+      <div class="quotes">
+        <figure class="quote" data-reveal style="--i:0">
+          <div class="stars" aria-label="5 out of 5 stars">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+          </div>
+          <blockquote>"We had budgeted a nine percent uplift at renewal. LicenseIQ found enough idle and over-tiered licenses that we renewed flat."</blockquote>
+          <figcaption><b>Director, IT Asset Management</b><span>Halvorsen Industrial</span></figcaption>
+        </figure>
+        <figure class="quote" data-reveal style="--i:1">
+          <div class="stars" aria-label="5 out of 5 stars">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+          </div>
+          <blockquote>"Every recommendation came with the user, the role and the usage behind it. Our auditors stopped arguing with the numbers."</blockquote>
+          <figcaption><b>SAP Platform Lead</b><span>Meridian Foods Group</span></figcaption>
+        </figure>
+        <figure class="quote" data-reveal style="--i:2">
+          <div class="stars" aria-label="5 out of 5 stars">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+          </div>
+          <blockquote>"The scenario model let us test a role redesign before we touched production. That alone paid for the engagement."</blockquote>
+          <figcaption><b>Head of Procurement Systems</b><span>Corvina Minerals</span></figcaption>
+        </figure>
+        <figure class="quote" data-reveal style="--i:3">
+          <div class="stars" aria-label="5 out of 5 stars">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+          </div>
+          <blockquote>"File-based and offline. Security signed off in a week instead of a quarter, and nothing new was installed in SAP."</blockquote>
+          <figcaption><b>Chief Information Security Officer</b><span>Aldermoor Utilities</span></figcaption>
+        </figure>
+      </div>
+      <p class="quotes-note">Illustrative quotes for this preview site. Names and companies are fictional.</p>
+    </div>
+  </section>
+
+  <!-- ===================== Blog ===================== -->
+  <section class="band band--white" id="blog" aria-labelledby="blog-title">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow">Resources</span>
+        <h2 id="blog-title">Learn the mechanics of SAP license cost.</h2>
+        <p>Short, practical pieces for the people who own the renewal.</p>
+      </div>
+      <div class="posts">
+        <a class="post-card" href="blog/fue-explained.html" data-reveal style="--i:0">
+          <div class="post-art"><img src="assets/img/art-fue.svg" alt="" width="200" height="120"></div>
+          <div class="post-body">
+            <div class="post-meta"><span class="cat">Fundamentals</span><span>Aug 18, 2026</span><span>6 min read</span></div>
+            <h3>FUE, explained: Advanced, Core and Self-Service in plain English</h3>
+            <p>One Full Use Equivalent is one Advanced user, five Core users or thirty Self-Service users. Why that ratio makes a single role so expensive.</p>
+            <span class="more">Read the article →</span>
+          </div>
+        </a>
+        <a class="post-card" href="blog/idle-license-audit.html" data-reveal style="--i:1">
+          <div class="post-art"><img src="assets/img/art-idle.svg" alt="" width="200" height="120"></div>
+          <div class="post-body">
+            <div class="post-meta"><span class="cat">Playbook</span><span>Sep 9, 2026</span><span>7 min read</span></div>
+            <h3>The idle-license audit: finding the licenses nobody logs into</h3>
+            <p>How to define "unused" so the business agrees, which accounts to exclude, and what evidence you need before you remove a license.</p>
+            <span class="more">Read the article →</span>
+          </div>
+        </a>
+        <a class="post-card" href="blog/scenario-modeling-before-renewal.html" data-reveal style="--i:2">
+          <div class="post-art"><img src="assets/img/art-scenario.svg" alt="" width="200" height="120"></div>
+          <div class="post-body">
+            <div class="post-meta"><span class="cat">Renewals</span><span>Oct 1, 2026</span><span>6 min read</span></div>
+            <h3>What-if before you sign: scenario modeling for your SAP renewal</h3>
+            <p>Test a role redesign on paper, price it in FUE, and walk into the negotiation with the number you are prepared to commit to.</p>
+            <span class="more">Read the article →</span>
+          </div>
+        </a>
+      </div>
+      <div class="btn-row" style="margin-top:28px; justify-content:center" data-reveal>
+        <a class="btn btn--outline" href="blog/index.html">All articles</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FAQ ===================== -->
+  <section class="band band--paper" id="faq" aria-labelledby="faq-title">
+    <div class="container">
+      <div class="section-head center" data-reveal>
+        <span class="eyebrow">FAQ</span>
+        <h2 id="faq-title">Questions licensing teams ask us.</h2>
+      </div>
+      <div class="faq" data-reveal>
+        <details open>
+          <summary>What data do you need?</summary>
+          <p>Standard exports your basis and identity teams already produce: the SAP user list, role assignments, SAP's role-to-license classification, usage statistics, and the job-profile and entitlement export from your identity platform. Spreadsheets and CSV files; no database and no credentials.</p>
+        </details>
+        <details>
+          <summary>Do we have to install anything in SAP?</summary>
+          <p>No. LicenseIQ never connects to your SAP systems. It reads files, and it writes nothing back. The action plan is executed through your own change process.</p>
+        </details>
+        <details>
+          <summary>How long does an assessment take?</summary>
+          <p>The analysis itself runs in minutes for an estate of around ten thousand users, on an ordinary laptop. A first engagement typically takes a week end to end, most of it collecting exports and validating the results with the business.</p>
+        </details>
+        <details>
+          <summary>Does it work for ECC as well as S/4HANA?</summary>
+          <p>The pricing model is SAP's Full Use Equivalent (FUE) scheme used for S/4HANA. For an ECC estate preparing a move to S/4HANA or RISE, the same analysis shows what your FUE count would be before you sign, which is when the number is cheapest to change.</p>
+        </details>
+        <details>
+          <summary>Is the savings figure guaranteed?</summary>
+          <p>No. It is an identified opportunity, priced at your FUE rate. Every recommendation still needs business validation: service accounts, seasonal users, people on leave and contractual terms all matter. LicenseIQ gives you the evidence to run that validation quickly.</p>
+        </details>
+        <details>
+          <summary>How is LicenseIQ priced?</summary>
+          <p>As a fixed-fee assessment or an annual subscription for teams that want to re-run it before every renewal. Request a demo and we will scope it with you.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA ===================== -->
+  <section class="band band--dark cta" id="demo" aria-labelledby="cta-title">
+    <div class="container">
+      <div data-reveal>
+        <span class="eyebrow">Request a demo</span>
+        <h2 id="cta-title" style="margin-top:14px">See your savings in <span class="serif gold-text">thirty minutes</span>.</h2>
+        <p class="lead">We will walk through a reference assessment, show you the action plan and the scenario model, and tell you exactly which exports to pull for your own estate.</p>
+        <div class="btn-row" style="margin-top:26px">
+          <a class="btn btn--gold" href="mailto:alireza-farhidzadeh@hcltech.com?subject=LicenseIQ%20demo%20request&amp;body=Hello%2C%0A%0AI%27d%20like%20to%20see%20a%20LicenseIQ%20demo.%0A%0ACompany%3A%0ASAP%20users%20(approx.)%3A%0APreferred%20times%3A%0A">Email us for a demo</a>
+        </div>
+      </div>
+      <form class="cta-form" id="demo-form" data-reveal>
+        <div class="row">
+          <label>Your name<input name="name" type="text" autocomplete="name" placeholder="Alex Carter"></label>
+          <label>Company<input name="company" type="text" autocomplete="organization" placeholder="Northwind Chemicals"></label>
+        </div>
+        <div class="row">
+          <label>SAP users
+            <select name="size">
+              <option>Under 2,000</option>
+              <option selected>2,000 – 10,000</option>
+              <option>10,000 – 25,000</option>
+              <option>More than 25,000</option>
+            </select>
+          </label>
+          <label>Next renewal
+            <select name="timing">
+              <option>Within 6 months</option>
+              <option selected>6 – 12 months</option>
+              <option>More than a year</option>
+              <option>Not sure</option>
+            </select>
+          </label>
+        </div>
+        <button class="btn btn--gold" type="submit">Request a demo</button>
+        <p class="fine">This opens your email app with a prefilled message to <a href="mailto:alireza-farhidzadeh@hcltech.com">alireza-farhidzadeh@hcltech.com</a>. Nothing is sent anywhere else.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html"><img src="assets/img/logo.svg" alt="" width="32" height="32">LicenseIQ</a>
+        <p>SAP license optimization that turns the usage, role and license data you already have into defensible annual savings.</p>
+      </div>
+      <div>
+        <h4>Product</h4>
+        <ul>
+          <li><a href="#how">How it works</a></li>
+          <li><a href="#platform">Platform</a></li>
+          <li><a href="#estimate">Savings estimate</a></li>
+          <li><a href="#security">Security</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="blog/index.html">Blog</a></li>
+          <li><a href="blog/fue-explained.html">FUE explained</a></li>
+          <li><a href="blog/idle-license-audit.html">Idle-license audit</a></li>
+          <li><a href="blog/scenario-modeling-before-renewal.html">Scenario modeling</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:alireza-farhidzadeh@hcltech.com?subject=LicenseIQ%20demo%20request">Request a demo</a></li>
+          <li><a href="mailto:alireza-farhidzadeh@hcltech.com">alireza-farhidzadeh@hcltech.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> LicenseIQ. All rights reserved.</span>
+      <span>Reference figures come from an anonymized assessment. Testimonials are illustrative.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/site.js" defer></script>
+<script src="assets/js/network.js" defer></script>
+<script type="module" src="assets/js/sculptures.js"></script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>FUE, explained: Advanced, Core and Self-Service in plain English · LicenseIQ</title>
+  <meta name="description" content="One Full Use Equivalent is one Advanced user, five Core users or thirty Self-Service users. Why that ratio makes a single role so expensive.">
+  <meta name="theme-color" content="#07111d">
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@1&display=swap">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="../index.html"><img src="../assets/img/logo.svg" alt="" width="32" height="32">LicenseIQ</a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="../index.html#what">Why</a></li>
+        <li><a href="../index.html#how">How it works</a></li>
+        <li><a href="../index.html#platform">Platform</a></li>
+        <li><a href="../index.html#estimate">Savings estimate</a></li>
+        <li><a href="../index.html#customers">Customers</a></li>
+        <li><a href="index.html" aria-current="page">Blog</a></li>
+        <li class="mobile-only"><a href="mailto:alireza-farhidzadeh@hcltech.com?subject=LicenseIQ%20demo%20request">Request a demo</a></li>
+      </ul>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn--gold btn--sm" href="mailto:alireza-farhidzadeh@hcltech.com?subject=LicenseIQ%20demo%20request">Request a demo</a>
+      <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false">
+        <svg class="open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <svg class="close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+<main id="main">
+
+  <article>
+    <header class="article-hero">
+      <div class="container">
+        <span class="eyebrow">Fundamentals</span>
+        <h1>FUE, explained: Advanced, Core and Self-Service in plain English</h1>
+        <p class="lead">If you have looked at an S/4HANA quote and wondered why one named user costs five times another, start here. The unit SAP bills in is simple; what makes it expensive is how a user ends up in a tier.</p>
+        <div class="article-meta"><span>Aug 18, 2026</span><span>6 min read</span><span>By the LicenseIQ team</span></div>
+      </div>
+    </header>
+    <div class="article band--paper">
+      <div class="container">
+        <div class="prose">
+
+<h2>One unit, three kinds of user</h2>
+<p>SAP prices S/4HANA named users in <b>Full Use Equivalents</b>, or FUE. The unit exists so that very different kinds of user can be pooled into one number on a contract. The conversion is fixed:</p>
+<table>
+  <thead><tr><th>Use type</th><th class="num">Users per FUE</th><th class="num">FUE per user</th><th>Typical work</th></tr></thead>
+  <tbody>
+    <tr><td>Advanced Use</td><td class="num">1</td><td class="num">1.00</td><td>Creates and changes business objects: orders, invoices, master data</td></tr>
+    <tr><td>Core Use</td><td class="num">5</td><td class="num">0.20</td><td>Transacts within a defined scope: approvals, confirmations, requisitions</td></tr>
+    <tr><td>Self-Service Use</td><td class="num">30</td><td class="num">0.03</td><td>Looks things up, records time, raises requests</td></tr>
+  </tbody>
+</table>
+<p>A contract buys a block of FUE. You fill it with whatever mix of users you have, and the mix is where the money moves. (SAP also defines a Developer Use type, which most estates manage separately and we leave aside here.)</p>
+
+<h2>What decides a user's tier</h2>
+<p>Not what a user does. What they <em>could</em> do. The tier a user needs follows from the authorizations in their roles. SAP classifies transactions and apps by use type, so a role that contains even one Advanced-classified authorization is an Advanced role, and a user who holds one Advanced role is an Advanced user, whatever else they hold and however rarely they use it.</p>
+<p>That mechanism is behind most over-licensing, and it has a name: <b>inheritance</b>. A job profile built years ago bundles a dozen roles. One of them carries a maintain-transaction nobody in that job has run since the project went live. Every person in the profile is an Advanced user at 1 FUE, while their actual work is Core at 0.2.</p>
+
+<h2>The arithmetic of a single role</h2>
+<blockquote>Remove one role from a job profile and every user in it drops from 1 FUE to 0.2. At $540 per FUE that is $432 a year, per person, for as long as the contract runs.</blockquote>
+<p>Take a profile with 150 users. Today it costs 150 FUE. Reclassified to Core it costs 30 FUE, freeing 120. At a reference price of $540 per FUE that is $64,800 a year; at a contract price of $2,000 per FUE it is $240,000. The role itself is unchanged for the people who still need it; it has simply stopped being inherited by the people who don't.</p>
+
+<h2>Why usage is the evidence</h2>
+<p>Authorizations tell you the tier a user is being charged for. Usage statistics tell you the tier they actually need. Compare the two for every user, the highest tier they exercised against the highest tier they hold, and you get three things at once: the candidates for a change, the exact roles that cause the difference, and the saving in FUE and in dollars.</p>
+<div class="callout"><b>Reference assessment.</b> Of 7,149 active users, 598 (8.4%) held a higher tier than their usage required. Moving them freed 308 FUE, a 7% reduction in the estate's FUE count, before counting a single idle license.</div>
+<p>This comparison is the core of LicenseIQ's license optimization: current FUE from roles, proposed FUE from observed transactions, and the difference priced at your rate. Every row names the user, the roles and the usage that produced it.</p>
+
+<h2>Three things to take into your next conversation</h2>
+<ol>
+  <li><b>Ask for the role classification file.</b> The mapping of roles to use types is the key input. If nobody can produce it, your FUE count is being set by a rule you cannot see.</li>
+  <li><b>Hunt for the single Advanced role</b> in otherwise-Core job profiles. It is the most common pattern and the cheapest to fix.</li>
+  <li><b>Price everything in FUE first,</b> then in dollars at your contract rate. It keeps the conversation with procurement in the same unit the vendor uses.</li>
+</ol>
+
+        </div>
+
+<div class="article-cta">
+  <div><h3>See these numbers for your own estate</h3><p>A thirty-minute walkthrough of a reference assessment, and the list of exports to pull.</p></div>
+  <a class="btn btn--gold" href="mailto:alireza-farhidzadeh@hcltech.com?subject=LicenseIQ%20demo%20request">Request a demo</a>
+</div>
+      </div>
+    </div>
+  </article>
+  <section class="band band--paper related">
+    <div class="container">
+      <div class="section-head"><span class="eyebrow">Keep reading</span><h2>More from the blog</h2></div>
+      <div class="posts">
+        <a class="post-card" href="idle-license-audit.html" data-reveal style="--i:0">
+          <div class="post-art"><img src="../assets/img/art-idle.svg" alt="" width="200" height="120"></div>
+          <div class="post-body">
+            <div class="post-meta"><span class="cat">Playbook</span><span>Sep 9, 2026</span><span>7 min read</span></div>
+            <h3>The idle-license audit: finding the licenses nobody logs into</h3>
+            <p>How to define "unused" so the business agrees, which accounts to exclude, and what evidence you need before you remove a license.</p>
+            <span class="more">Read the article →</span>
+          </div>
+        </a>
+        <a class="post-card" href="scenario-modeling-before-renewal.html" data-reveal style="--i:1">
+          <div class="post-art"><img src="../assets/img/art-scenario.svg" alt="" width="200" height="120"></div>
+          <div class="post-body">
+            <div class="post-meta"><span class="cat">Renewals</span><span>Oct 1, 2026</span><span>6 min read</span></div>
+            <h3>What-if before you sign: scenario modeling for your SAP renewal</h3>
+            <p>Test a role redesign on paper, price it in FUE, and walk into the negotiation with the number you are prepared to commit to.</p>
+            <span class="more">Read the article →</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="../index.html"><img src="../assets/img/logo.svg" alt="" width="32" height="32">LicenseIQ</a>
+        <p>SAP license optimization that turns the usage, role and license data you already have into defensible annual savings.</p>
+      </div>
+      <div>
+        <h4>Product</h4>
+        <ul>
+          <li><a href="../index.html#how">How it works</a></li>
+          <li><a href="../index.html#platform">Platform</a></li>
+          <li><a href="../index.html#estimate">Savings estimate</a></li>
+          <li><a href="../index.html#security">Security</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="index.html">Blog</a></li>
+          <li><a href="fue-explained.html">FUE explained</a></li>
+          <li><a href="idle-license-audit.html">Idle-license audit</a></li>
+          <li><a href="scenario-modeling-before-renewal.html">Scenario modeling</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:alireza-farhidzadeh@hcltech.com?subject=LicenseIQ%20demo%20request">Request a demo</a></li>
+          <li><a href="mailto:alireza-farhidzadeh@hcltech.com">alireza-farhidzadeh@hcltech.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> LicenseIQ. All rights reserved.</span>
+      <span>Reference figures come from an anonymized assessment. Testimonials are illustrative.</span>
+    </div>
+  </div>
+</footer>
+<script src="../assets/js/site.js" defer></script>
+</body>
+</html>
